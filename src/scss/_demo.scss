@@ -1,0 +1,24 @@
+/*
+  These styles are specific for the demo and
+  are not general rules required for the app
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #fafafa;
+	font-family: 'Roboto', sans-serif;
+}
+
+.quiz-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	padding: 30px;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,.16);
+	width: 600px;
+}

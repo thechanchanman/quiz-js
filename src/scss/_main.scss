@@ -1,0 +1,78 @@
+// quiestion
+.quiz-question {
+	background: $question__background-color;
+	padding: 10px;
+	margin-bottom: 2rem;
+}
+
+// list of possible answers
+ol.quiz-list, ul.quiz-list {
+	padding: 5px;
+}
+
+li.quiz-list-item {
+	list-style: none;
+	border-bottom: 1px solid $choices__border-bottom--color;
+	&:hover {
+		background: $choices_hover__background-color;
+	}
+	&.picked {
+		border-bottom: 1px solid $choices_picked__border-bottom--color;
+	}
+	label.quiz-label {
+		width: 100%;
+		display: inline-block;
+		padding: 0.5rem;
+	}
+	input.quiz-radio {
+		display: none;
+	}
+}
+
+label.quiz-label,
+.quiz-btn {
+	cursor: pointer;
+}
+
+// quiz controls
+.quiz-controls {
+	text-align: center;
+	.quiz-btn {
+		border: none;
+		padding: 10px;
+		min-width: 6rem;
+		margin: 0 15px;
+		transition: .3s;
+		outline: none;
+		border-radius: $button__border-radius;
+		&:hover {
+			box-shadow: 0 0 3px 0px rgba(0,0,0,.3);
+		}
+	}
+
+	.quiz-btn-prev {
+		background-color: $button_prev__background-color;
+	}
+
+	.quiz-btn-next {
+		background-color: $button_next__background-color;
+	}
+
+	.quiz-btn-confirm {
+		background: $button_confirm__background-color;
+	}
+
+	.quiz-btn-confirm:disabled,
+	.quiz-btn-confirm[disabled] {
+		background: $button_disabled__background-color;
+		cursor: not-allowed;
+		&:hover {
+			box-shadow: none;
+		}
+	}
+
+	.quiz-btn-hide {
+		opacity: 0;
+		cursor: default;
+	}
+}
